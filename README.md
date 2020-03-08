@@ -1,11 +1,21 @@
-# 检测工具
-## 使用方法
-基本上只需要在```train.py```中修改一些参数就行了
-### 文件放置
-1. 把配置文件放在```config```中
-2. 把预训练的权重放在```pretrain```中
-3. 可视化和评估用的一个权重地址
-### 参数修改
-1. 修改数据集地址```root_davis```
-2. 生成可视化数据的时候建议设置```gpu=1```,不然看的时候是两组插在一起的,眼比较花
-3. 如果想生成生成别的结果,如```daivs_test```,修改```visual_result.py```中的```visual_what```
+# Detection Tool
+## How to use
+Only need to change some parameter in ```train.py```
+### files set
+1. put config file in ```config```
+2. put pretrained weight in ```pretrain```
+3. ```visual_v1.py``` and evalution use same weight path
+### change parameter
+1. change dataset path in ```root_davis```
+2. when use ```visual_v1```,recomment to set ```gpu=1```
+3. if want to get else result ,such as ```daivs_test```,change ```visual_what``` in ```visual_result.py```
+
+## visual_v1 and visual_v2
+**visual_v1**:
++ launch visual_v1 in ```train.py```
++ need ```config```and```weight```
+
+**visual_v2**:
++ independent run,change parameter
++ need result.jason
++ need register dateset
