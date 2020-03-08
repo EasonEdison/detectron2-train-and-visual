@@ -31,7 +31,7 @@ from detectron2.utils.events import (
 )
 
 from datasets.regist_datasets import regist_datasets
-from visual_result import visual
+from visual_v1 import visual
 
 logger = logging.getLogger("detectron2")
 
