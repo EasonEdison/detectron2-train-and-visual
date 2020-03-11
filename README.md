@@ -1,4 +1,6 @@
 # Detection Tool
+## Goal of this repo
+if you want to use a model in detectron2 as front end to detect object in your dataset,you can use this repo to quickly try many model while don't neet to change ```config.yaml``` to  fit your dataset,only change some parameter in ```train.py```, and you can get visual result use```visual_2.py```
 ## How to use
 Only need to change some parameter in ```train.py```
 ### files set
